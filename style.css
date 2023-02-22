@@ -1,0 +1,73 @@
+body {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(.//Image/photo01.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    letter-spacing: 4px;
+}
+
+.clock {
+    display: flex;
+}
+
+.clock div {
+    margin: 10px;
+    position: relative;
+}
+
+.clock span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 100px;
+    background-color: slateblue;
+    opacity: 0.8;
+    color: white;
+    font-size: 50px;
+}
+
+.clock .text {
+    text-transform: uppercase;
+    background-color: darkblue;
+    opacity: 0.8;
+    font-size: 10px;
+    height: 30px;
+    letter-spacing: 2px;
+    
+}
+
+.clock #ampm {
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    font-size: 20px;
+    background-color: green;
+}
+
+.clock .sutimi {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 470px) {
+    .clock {
+      flex-direction: column;
+    }
+    .clock .sutimi {
+        height: 25px;
+    }
+  }
